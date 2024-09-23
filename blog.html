@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <!-- Use daisyUI from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Lexend -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'text-01': 'rgb(17, 17, 17)',
+                'text-02': 'rgba(17, 17, 17, 0.7)',
+                'text-03': 'rgba(17, 17, 17, 0.4)',
+                'bg-green': 'rgb(180, 244, 97)',
+                'bg-light': 'rgba(17, 17, 17, 0.05)',
+                'light-bg': 'rgb(249, 247, 243)'
+              },
+              fontFamily: {
+                lexend: ['Lexend', 'sans-serif']
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend">
+    <header class="bg-light-bg">
+        <nav>
+            <div class="w-11/12 mx-auto flex flex-col lg:flex-row items-center lg:justify-between py-3">
+                <div>
+                    <a href="./index.html" class="px-2 py-1 text-lg rounded-lg font-bold bg-bg-green text-text-01">Home</a>
+                </div>
+                <div class="flex gap-2 justify-center items-center">
+                    <img class="w-8 h-8" src="./assets/logo.png" alt="Donate Bangladesh Logo">
+                    <h2 class="text-xl font-bold text-text-01">DONATE BANGLADESH</h2>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <img class="w-5 h-5" src="./assets/coin.png" alt="Coin Icon" >
+                    <p id="my-balance" class="text-xl font-medium text-text-02">5500</p>
+                    <p class="text-xl font-medium text-text-02">BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <h2 class="text-5xl font-black text-text-01 mb-5">Important FAQ</h2>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
