@@ -30,25 +30,6 @@
       </script>
 </head>
 <body class="font-lexend">
-    <!-- Header Section Start -->
-     <!-- <header class="bg-light-bg fixed top-0 left-0 w-full z-50">
-        <nav class="flex items-center justify-between w-11/12 mx-auto p-6 gap-5">
-            <div>
-                <button class="btn bg-bg-green text-gray-900 text-xl font-semibold px-8 py-3 rounded-lg">Blog</button>
-            </div>
-            <div class="flex items-center gap-2">
-                <img src="./assets/logo.png" alt="Donate Bangladesh Logo">
-                <h1 class="text-gray-900 text-xl font-semibold">Donate Bangladesh</h1>
-            </div>
-            <div>
-                <span class="flex items-center gap-1">
-                    <img src="./assets/coin.png" alt="Coin Icon">
-                    <p id="my-balance" class="text-text-02 font-medium gap-5"><span>55000</span></p>
-                    <p class="text-text-02 font-medium gap-5">BDT</p>
-                </span>
-            </div>  
-        </nav>
-     </header> -->
      <header class="bg-light-bg fixed top-0 left-0 w-full z-50">
       <nav>
           <div class="w-11/12 mx-auto flex flex-col lg:flex-row items-center lg:justify-between py-3">
@@ -61,7 +42,7 @@
               </div>
               <div class="flex items-center justify-center gap-2">
                   <img class="w-5 h-5" src="./assets/coin.png" alt="Coin Icon" >
-                  <p id="my-balance" class="text-xl font-medium text-text-02">5500</p>
+                  <p id="my-balance" class="text-xl font-medium text-text-02">765432</p>
                   <p class="text-xl font-medium text-text-02">BDT</p>
               </div>
           </div>
@@ -72,14 +53,15 @@
      <main>
         <section class="w-11/12 mx-auto px-4 lg:px-36">
             <!-- Btn Start -->
-            <div class=" flex justify-center gap-5 py-5 lg:py-20 fixed top-28 lg:top-14 left-0 w-full z-10 bg-gray-50">
-                <button id="donation-btn" class="btn bg-bg-green text-text-01 text-xl font-semibold px-8 py-4 rounded-xl border flex items-center justify-center  w-40 h-14">Donation</button>
-                <button id="history-btn" class="btn text-text-02 text-xl font-semibold px-8 py-4 rounded-xl border flex items-center justify-center  w-36 h-14 box-border">History</button>
+            <div class=" flex justify-center gap-5 py-5 lg:py-10 fixed top-28 lg:top-14 left-0 w-full z-10 bg-gray-50">
+                <button id="donation-btn" class="btn bg-bg-green text-text-01 text-xl font-semibold px-8 py-4 rounded-xl border flex items-center justify-center  w-40  h-14">Donation</button>
+                <button id="history-btn" class="btn text-text-02 text-xl font-semibold px-8 py-4 rounded-xl border flex items-center justify-center w-36 h-14 box-border">History</button>
             </div>
             <!-- Btn End -->
             <!-- Card Section : Start -->
-             <section id="donation-sec" class="space-y-8 pt-52 lg:pt-80">
+             <section id="donation-sec" class="space-y-8 pt-52 lg:pt-60">
                 <!-- Card 01 Sart -->
+                <div class="divider hidden lg:block"></div>
                 <div class="hero p-3 lg:p-8 rounded-2xl border">
                     <div class="hero-content flex-col lg:flex-row gap-10">
                       <img
@@ -167,7 +149,7 @@
      <dialog id="my_modal" class="modal">
       <div class="modal-box flex gap-2 flex-col items-center text-center">
           <h3 class="text-4xl font-bold text-text-01">Congrates!</h3>
-          <img src="./assets/coin.png" alt="" class="w-10 h-10">
+          <img src="./assets/coin.png" alt="Coin Icon" class="w-10 h-10">
           <p class="py-4">You have donated for humankind</p>
           <h3 class="text-xl text-text-01 font-bold">Successfully</h3>
           <div class="modal-action justify-center">
@@ -184,7 +166,7 @@
             <p class="text-sm">
                 &copy; 2024. All rights reserved.
             </p>
-            <hr class="border-t border-gray-300 my-6">
+            <div class="divider"></div>
             <p class="text-xs">
                 Designed with ♥ by Purnendu Sarkar
             </p>
