@@ -33,7 +33,7 @@
       </script>
 </head>
 <body class="font-lexend">
-    <header class="bg-light-bg">
+    <header class="bg-light-bg fixed top-0 left-0 w-full z-50">
         <nav>
             <div class="w-11/12 mx-auto flex flex-col lg:flex-row items-center lg:justify-between py-3">
                 <div>
@@ -51,11 +51,12 @@
             </div>
         </nav>
     </header>
-    <main class="w-11/12 mx-auto">
+    <main class="w-11/12 mx-auto py-14">
+      <div class="divider block"></div>
         <h2 class="text-5xl font-black text-text-01 my-10">Important FAQ</h2>
         <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" checked="checked" />
+              <input type="radio" name="my-accordion-4" checked="checked"  />
               <div class="collapse-title text-2xl font-bold text-text-01">What is the Document Object Model (DOM)?</div>
               <div class="collapse-content">
                 <p class="text-text-02 bg-gray-300 px-5 rounded">The Document Object Model (DOM) is a programming interface that represents a web page's structure as a tree of objects. It allows scripts to dynamically access and modify the content, structure, and style of a webpage.</p>
