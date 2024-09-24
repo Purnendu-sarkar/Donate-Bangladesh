@@ -6,6 +6,7 @@ const historySec = document.getElementById('history-sec');
 const noakhaliBtn = document.getElementById('noakhali-btn');
 const feniBtn = document.getElementById('feni-btn');
 const quotaBtn = document.getElementById('quota-btn');
+const footer = document.getElementById('footer');
 
 donationBtn.addEventListener('click', function() {
     donationBtn.classList.add('bg-bg-green', 'text-text-01');
@@ -23,6 +24,7 @@ historyBtn.addEventListener('click', function() {
     donationBtn.classList.add('text-text-02');
     historySec.classList.remove("hidden");
     donationSec.classList.add("hidden");
+    footer.classList.add("hidden");
 });
 const handleDonation = (btnId, inputId, balanceId, titleId) => {
     const btn = document.getElementById(btnId);
