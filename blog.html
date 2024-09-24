@@ -52,27 +52,80 @@
         </nav>
     </header>
     <main class="w-11/12 mx-auto">
-        <h2 class="text-5xl font-black text-text-01 mb-5">Important FAQ</h2>
+        <h2 class="text-5xl font-black text-text-01 my-10">Important FAQ</h2>
         <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-2xl font-bold text-text-01">What is the Document Object Model (DOM)?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="text-text-02 bg-gray-300 px-5 rounded">The Document Object Model (DOM) is a programming interface that represents a web page's structure as a tree of objects. It allows scripts to dynamically access and modify the content, structure, and style of a webpage.</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-2xl font-bold text-text-01">How do you select an element from the DOM?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="text-text-02 bg-gray-300 px-5 rounded">To select an element from the DOM in JavaScript, you can use various methods depending on the criteria for selecting the element. Here are some of the most commonly used methods:
+                    <br>
+
+                    1. getElementById()
+                    Selects an element by its id attribute.
+                    <br>
+                    2. getElementsByClassName()
+                    Selects all elements with a specific class. This returns an HTMLCollection (which is similar to an array).
+                    <br>
+                    3. getElementsByTagName()
+                    Selects all elements with a specific tag name (like div, p, span). This also returns an HTMLCollection.
+                    <br>
+                    4. querySelector()
+                    Selects the first element that matches a CSS selector.
+                    <br>
+                    5. querySelectorAll()
+                    Selects all elements that match a CSS selector. This returns a NodeList, which can be iterated over like an array.
+                </p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-2xl font-bold text-text-01">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p class="text-text-02 bg-gray-300 px-5 rounded">Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events from its child elements. It takes advantage of event bubbling, allowing events from child elements to propagate up to the parent.
+                    <br>
+                    <br>
+
+                    Why it's useful:
+                    <br>
+                    Improves performance by reducing the number of event listeners.
+                    <br>
+                    Handles dynamic content effectively, as new child elements are automatically covered.
+                    <br>
+                    Simplifies code by managing events in one place.</p>
+                </div>
+              </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-2xl font-bold text-text-01">How do you manipulate an element's attributes and styles using the DOM?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="text-text-02 bg-gray-300 px-5 rounded">To manipulate an element's **attributes** and **styles** in the DOM:
+                    <br>
+                    <br>
+
+                    ### Attributes:
+                    <br>
+                    - **`getAttribute()`**: Get an attribute value.
+                    <br>
+                    - **`setAttribute()`**: Set an attribute.
+                    <br>
+                    - **`removeAttribute()`**: Remove an attribute.
+                    <br>
+                    <br>
+                    
+                    ### Styles:
+                    <br>
+                    - Use **`element.style.property`** to directly change inline styles (e.g., `element.style.color = "red"`).
+                    <br>
+                    - Use **`classList.add()`** and **`classList.remove()`** to manage CSS classes.
+                </p>
               </div>
             </div>
           </div>
