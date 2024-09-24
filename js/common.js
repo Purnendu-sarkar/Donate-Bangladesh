@@ -12,7 +12,7 @@ function calculate(inputAmount, myBalance, locationBalance, id, locationTitle) {
         alert("Insufficient balance! Please top up to proceed with your donation.");
     } 
     else {
-        my_modal.showModal();
+        myModel.showModal();
         document.getElementById(id).innerText = (locationBalance + inputAmount).toFixed(2);
         document.getElementById('my-balance').innerText = (myBalance - inputAmount).toFixed(2);
         addToHistory(inputAmount, locationTitle);
@@ -24,7 +24,7 @@ function addToHistory(inputAmount, locationTitle) {
     const div = document.createElement('div');
     const now = new Date();
     const dateTimeString = now.toString();  
-    div.classList.add('flex', 'flex-col', 'gap-5', 'mb-5', 'lg:p-10', 'p-3', 'border', 'rounded-xl');
+    div.classList.add('flex', 'flex-col', 'gap-5', 'mb-5', 'p-3', 'lg:p-10',  'border', 'rounded-xl');
     div.innerHTML = `
         <h5 class="lg:text-xl font-extrabold text-text-01">
             ${inputAmount} Taka donated to: ${locationTitle}

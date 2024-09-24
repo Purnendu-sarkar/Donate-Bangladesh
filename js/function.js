@@ -6,6 +6,7 @@ const historySec = document.getElementById('history-sec');
 const noakhaliBtn = document.getElementById('noakhali-btn');
 const feniBtn = document.getElementById('feni-btn');
 const quotaBtn = document.getElementById('quota-btn');
+const myModel = document.getElementById('my_modal');
 const footer = document.getElementById('footer');
 
 donationBtn.addEventListener('click', function() {
