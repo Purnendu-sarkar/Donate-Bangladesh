@@ -45,7 +45,7 @@
                 </div>
                 <div class="flex items-center justify-center gap-2">
                     <img class="w-5 h-5" src="./assets/coin.png" alt="Coin Icon" >
-                    <p id="my-balance" class="text-xl font-medium text-text-02">76543</p>
+                    <p  class="text-xl font-medium text-text-02">76543</p>
                     <p class="text-xl font-medium text-text-02">BDT</p>
                 </div>
             </div>
@@ -56,7 +56,7 @@
         <h2 class="text-5xl font-black text-text-01 my-10">Important FAQ</h2>
         <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" checked="checked"  />
+              <input type="radio" name="my-accordion-4"/>
               <div class="collapse-title text-2xl font-bold text-text-01">What is the Document Object Model (DOM)?</div>
               <div class="collapse-content">
                 <p class="text-text-02 bg-gray-300 px-5 rounded">The Document Object Model (DOM) is a programming interface that represents a web page's structure as a tree of objects. It allows scripts to dynamically access and modify the content, structure, and style of a webpage.</p>
@@ -107,25 +107,56 @@
               <input type="radio" name="my-accordion-4" />
               <div class="collapse-title text-2xl font-bold text-text-01">How do you manipulate an element's attributes and styles using the DOM?</div>
               <div class="collapse-content">
-                <p class="text-text-02 bg-gray-300 px-5 rounded">To manipulate an element's **attributes** and **styles** in the DOM:
-                    <br>
-                    <br>
+                <p class="text-text-02 bg-gray-300 px-5 rounded">To manipulate an element's attributes and styles in the DOM using JavaScript, you can use the following methods:
+                  <br>
+                  <br>
 
-                    ### Attributes:
-                    <br>
-                    - **`getAttribute()`**: Get an attribute value.
-                    <br>
-                    - **`setAttribute()`**: Set an attribute.
-                    <br>
-                    - **`removeAttribute()`**: Remove an attribute.
-                    <br>
-                    <br>
-                    
-                    ### Styles:
-                    <br>
-                    - Use **`element.style.property`** to directly change inline styles (e.g., `element.style.color = "red"`).
-                    <br>
-                    - Use **`classList.add()`** and **`classList.remove()`** to manage CSS classes.
+                  1. Manipulating Attributes
+                  <br>
+                  getAttribute(attribute): Retrieves the value of an attribute.
+                  <br>
+                  setAttribute(attribute, value): Adds or updates the value of an attribute.
+                  <br>
+                  removeAttribute(attribute): Removes an attribute from an element.
+                  <br>
+                  2. Manipulating Styles
+                  <br>
+                  element.style.property: Directly changes the inline CSS styles by setting a property, e.g., 
+                  <br>
+                  element.style.backgroundColor.
+                  <br>
+                  3. Manipulating Classes
+                  <br>
+                  element.classList.add(class): Adds a CSS class to the element.
+                  <br>
+                  element.classList.remove(class): Removes a class from the element.
+                  <br>
+                  element.classList.toggle(class): Toggles the presence of a class on the element.
+                  <br>
+                  These methods allow you to dynamically modify the appearance and behavior of elements in a web page.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4"  />
+              <div class="collapse-title text-2xl font-bold text-text-01">What is the difference between innerHTML and textContent?</div>
+              <div class="collapse-content">
+                <p class="text-text-02 bg-gray-300 px-5 rounded">innerHTML: Inserts or retrieves HTML content, allowing you to include HTML tags within the text.
+                  <br>
+                  textContent: Inserts or retrieves only plain text, without interpreting HTML tags.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-2xl font-bold text-text-01">How do I handle events using the DOM?</div>
+              <div class="collapse-content">
+                <p class="text-text-02 bg-gray-300 px-5 rounded">You can attach event listeners to elements using:
+                  <br>
+                  <br>
+
+                  addEventListener(event, handler): Attaches an event handler to an element (e.g., click, mouseover, etc.).
+                  <br>
+                  removeEventListener(event, handler): Removes an attached event handler.
                 </p>
               </div>
             </div>

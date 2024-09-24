@@ -1,4 +1,4 @@
-
+const myBalance = document.getElementById('my-balance')
 const donationBtn = document.getElementById('donation-btn');
 const historyBtn = document.getElementById('history-btn');
 const donationSec = document.getElementById('donation-sec');
